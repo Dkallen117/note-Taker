@@ -1,6 +1,6 @@
 
 const express = require("express");
-const fs = require("fs");
+
 
 const app = express();
 const PORT = 3000;
@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // ROUTES
-require('./routes/apiRoutes')(app, fs);
+require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 
