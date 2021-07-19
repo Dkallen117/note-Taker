@@ -17,7 +17,7 @@
 | Technology  | Link                                   |
 | ----------- | -------------------------------------- |
 | Node.js     | https://nodejs.org/en/                 |
-| Inquirer.js | https://www.npmjs.com/package/inquirer |
+| Express     | https://www.npmjs.com/package/express  |
 
 ## Installation ⚙️
 
