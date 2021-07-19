@@ -44,12 +44,12 @@ module.exports = (app) => {
     app.delete("/api/notes/:id", (req, res) => {
 
         
-        let noteId = req.params.id.toString();
+        let noteId = req.params.id;
         
 
         let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 
-        const deleteData = data.filter( note => note.id.toString() !== noteId );
+        const deleteData = data.filter( note => note.id !== noteId );
 
 
         fs.writeFileSync('./db/db.json', JSON.stringify(deleteData));
