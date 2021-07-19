@@ -25,7 +25,7 @@ No need to install. Click the Heroku link below to be taken to the live applicat
 
 ## Usage Demo
 
-
+[Live Application Link](https://rocky-fjord-24025.herokuapp.com/)
 
 ## License ![GitHub](https://img.shields.io/github/license/smcheah/README-generator)
 
