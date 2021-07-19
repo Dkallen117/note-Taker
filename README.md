@@ -27,6 +27,9 @@ No need to install. Click the Heroku link below to be taken to the live applicat
 
 [Live Application Link](https://rocky-fjord-24025.herokuapp.com/)
 
+
+![demo](public/Note_Taker.gif)
+
 ## License ![GitHub](https://img.shields.io/github/license/smcheah/README-generator)
 
 MIT
