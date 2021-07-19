@@ -1,40 +1,45 @@
 
-const notesData = require("../db/db.json");
-const fs = require("fs");
-const { v4: uuidv4 } = require('uuid');
+const fs = require('fs');
+const uniqid = require('uniqid');
 
 
-// ROUTING
-module.exports = function (app) {
 
-  
-    app.get("/api/notes", (req, res)=> {
- 
-       let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+module.exports = (app) => {
 
-       console.log("\nGET request - Returning notes data: " + JSON.stringify(data));
-
-     
-       res.json(data);
+   
+    // API GET Request
+    app.get("/api/notes", (req, res) => {
+        
+        
+        let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+        
+        
+        
+        
+        res.json(data);
     });
 
 
-  app.post("/api/notes", (req, res) => {
-  
-    const newNote = req.body;
+    // API POST Request
+    app.post("/api/notes", (req, res) => {
 
-    newNote.id = uuidv4();
+    
+        const newNote = req.body;
+        
+        newNote.id = uniqid();
 
-    let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+        let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    
 
-    data.push(newNote);
+        data.push(newNote);
 
 
- 
+        fs.writeFileSync('./db/db.json', JSON.stringify(data));
+        
+    
 
-    fs.writeFileSync('./db/db.json', JSON.stringify(data));
+        res.json(data);
+    });
+    
+}
 
-    res.json(data);
-
-});
-};
