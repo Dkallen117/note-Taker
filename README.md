@@ -1,4 +1,4 @@
-# note-Taker ![GitHub top language](https://img.shields.io/github/languages/top/Dkallen117/readMe-Generator)
+# note-Taker ![GitHub top language](https://img.shields.io/github/languages/top/Dkallen117/note-Taker)
 
 ## Description 
 
