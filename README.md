@@ -30,6 +30,6 @@ No need to install. Click the Heroku link below to be taken to the live applicat
 
 ![demo](public/Note_Taker.gif)
 
-## License ![GitHub](https://img.shields.io/github/license/smcheah/README-generator)
+## License ![GitHub](https://img.shields.io/github/license/smcheah/note-Taker)
 
 MIT
