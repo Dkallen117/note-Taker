@@ -2,7 +2,7 @@
 
 ## Description 
 
-
+This application utilizes the Express npm package to save, store, and delete notes. Applying Express to this application was a great way to gain experience on how the front-end connects to a back-end database. From the live Heroku link (another great learning experience), the user is taken to a main page, where they click a button to be taken to the note-taking page. From there, the user can then write, save, and delete notes, via the write (pencil), save (floppy disk), and delete (trash can) icons. See the GIF below for a demo!
 
 
 ## Table of Contents 📖
